@@ -2,6 +2,8 @@
 
 An ultra-fast, lightweight native Windows duplicate file finder written in Rust. Compiles to a single ~5.5 MB executable with zero runtime dependencies.
 
+![DupFinder Screenshot](assets/screenshot.png)
+
 ## Features
 
 - **4-Stage Progressive Pipeline** — avoids reading unique files from disk:
