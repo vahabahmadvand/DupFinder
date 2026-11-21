@@ -1,0 +1,14 @@
+# Rust / Cargo build outputs
+/target/
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+Thumbs.db
+Desktop.ini
+.DS_Store
