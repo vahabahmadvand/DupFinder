@@ -1,0 +1,24 @@
+[package]
+name = "dupfinder"
+version = "0.1.0"
+edition = "2024"
+description = "Ultra-fast, lightweight duplicate file finder for Windows"
+
+[dependencies]
+blake3 = "1.8"
+chrono = "0.4"
+eframe = "0.31"
+jwalk = "0.8"
+rayon = "1.10"
+rfd = "0.15"
+rustc-hash = "2.1"
+trash = "5.2"
+
+[target.'cfg(windows)'.dependencies]
+windows-sys = { version = "0.59", features = ["Win32_Storage_FileSystem", "Win32_Foundation"] }
+
+[profile.release]
+opt-level = 3
+lto = "thin"
+codegen-units = 1
+strip = true
